@@ -1,0 +1,884 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Nov 26 15:52:49 2018
+# Process ID: 3729
+# Log file: /home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/trigger_logic_AXI.vds
+# Journal file: /home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source trigger_logic_AXI.tcl -notrace
+Command: synth_design -top trigger_logic_AXI -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 985.582 ; gain = 154.520 ; free physical = 22343 ; free virtual = 29079
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'trigger_logic_AXI' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/trigger_logic_axi.vhd:124]
+	Parameter triggers bound to: 10 - type: integer 
+	Parameter DELAY_INPUT_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/trigger_logic_axi.vhd:484]
+WARNING: [Synth 8-614] signal 'coincidence_no_sin_cnt' is read in the process but is not in the sensitivity list [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/trigger_logic_axi.vhd:880]
+	Parameter DELAY_INPUT_WIDTH bound to: 16 - type: integer 
+	Parameter TRIGGERS bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'tlu_frontend' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:37' bound to instance 'frontend_logic' of component 'tlu_frontend' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/trigger_logic_axi.vhd:1041]
+INFO: [Synth 8-638] synthesizing module 'tlu_frontend' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:83]
+	Parameter DELAY_INPUT_WIDTH bound to: 16 - type: integer 
+	Parameter TRIGGERS bound to: 10 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'scintillator_ibufds' to cell 'IBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:154]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'uX_ibufds' to cell 'IBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:161]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'uX_ibufds' to cell 'IBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:161]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'uX_ibufds' to cell 'IBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:161]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'uX_ibufds' to cell 'IBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:161]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'uX_ibufds' to cell 'IBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:161]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'uX_ibufds' to cell 'IBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:161]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'uX_ibufds' to cell 'IBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:161]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'uX_ibufds' to cell 'IBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:161]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'diamond_ibufds' to cell 'IBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:168]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'coincidence_out_buffer' to cell 'OBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:180]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'trig_countn' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'trig_countn' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:207]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'trig_countn' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:207]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'trig_countn' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:207]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'trig_countn' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:207]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'trig_countn' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:207]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'trig_countn' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:207]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'trig_countn' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:207]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'trig_countn' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:207]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'trig_countn' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:207]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'inputX' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:44]
+	Parameter width bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'add_module' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/add_module.vhd:34' bound to instance 'adr_add1' of component 'add_module' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'add_module' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/add_module.vhd:42]
+	Parameter width bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'add_module' (1#1) [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/add_module.vhd:42]
+INFO: [Synth 8-3491] module 'blk_mem_gen_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/blk_mem_gen_1_stub.vhdl:5' bound to instance 'delaymem' of component 'blk_mem_gen_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/blk_mem_gen_1_stub.vhdl:20]
+INFO: [Synth 8-256] done synthesizing module 'one_ch_delay' (2#1) [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:44]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'inputX' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:219]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'inputX' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:219]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'inputX' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:219]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'inputX' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:219]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'inputX' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:219]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'inputX' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:219]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'inputX' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:219]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'inputX' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:219]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'inputX' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:219]
+INFO: [Synth 8-3491] module 'beam_current_monitor' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/beam_current_monitor.vhd:34' bound to instance 'beam_current_counter' of component 'beam_current_monitor' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'beam_current_monitor' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/beam_current_monitor.vhd:41]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'beam_c' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/beam_current_monitor.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'beam_current_monitor' (3#1) [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/beam_current_monitor.vhd:41]
+	Parameter TRIGGER_N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'coincidence_unit' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:38' bound to instance 'u1_coincidence_unit' of component 'coincidence_unit' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'coincidence_unit' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:54]
+	Parameter TRIGGER_N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'riseing_edge_persist' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:34' bound to instance 'rpn' of component 'riseing_edge_persist' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'riseing_edge_persist' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'riseing_edge_persist' (4#1) [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:42]
+INFO: [Synth 8-3491] module 'riseing_edge_persist' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:34' bound to instance 'rpn' of component 'riseing_edge_persist' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:88]
+INFO: [Synth 8-3491] module 'riseing_edge_persist' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:34' bound to instance 'rpn' of component 'riseing_edge_persist' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:88]
+INFO: [Synth 8-3491] module 'riseing_edge_persist' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:34' bound to instance 'rpn' of component 'riseing_edge_persist' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:88]
+INFO: [Synth 8-3491] module 'riseing_edge_persist' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:34' bound to instance 'rpn' of component 'riseing_edge_persist' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:88]
+INFO: [Synth 8-3491] module 'riseing_edge_persist' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:34' bound to instance 'rpn' of component 'riseing_edge_persist' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:88]
+INFO: [Synth 8-3491] module 'riseing_edge_persist' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:34' bound to instance 'rpn' of component 'riseing_edge_persist' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:88]
+INFO: [Synth 8-3491] module 'riseing_edge_persist' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:34' bound to instance 'rpn' of component 'riseing_edge_persist' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:88]
+INFO: [Synth 8-3491] module 'riseing_edge_persist' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:34' bound to instance 'rpn' of component 'riseing_edge_persist' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:88]
+INFO: [Synth 8-3491] module 'riseing_edge_persist' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:34' bound to instance 'rpn' of component 'riseing_edge_persist' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:88]
+INFO: [Synth 8-226] default block is never used [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:121]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'q_count' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'coincidence_unit' (5#1) [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:54]
+	Parameter TRIGGER_N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'coincidence_unit' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:38' bound to instance 'u2_coincidence_unit' of component 'coincidence_unit' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:258]
+INFO: [Synth 8-256] done synthesizing module 'tlu_frontend' (6#1) [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_frontend.vhd:83]
+	Parameter DELAY_INPUT_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'tlu_backend' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:37' bound to instance 'backend_logic' of component 'tlu_backend' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/trigger_logic_axi.vhd:1081]
+INFO: [Synth 8-638] synthesizing module 'tlu_backend' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:93]
+	Parameter BEAM_CURRENT_RESOLUTION bound to: 16 - type: integer 
+	Parameter DELAY_INPUT_WIDTH bound to: 16 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'uX_ibuf' to cell 'IBUF' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:179]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'uX_ibuf' to cell 'IBUF' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:179]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'uX_ibuf' to cell 'IBUF' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:179]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'uX_ibuf' to cell 'IBUF' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:179]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'pulser_out1' to cell 'OBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:189]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'pulser_out2' to cell 'OBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:196]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'pulser_out3' to cell 'OBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:203]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'pulser_delayed_AND_prescaler_xor_pulser_out1' to cell 'OBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:212]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'pulser_delayed_AND_prescaler_xor_pulser_out2' to cell 'OBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:219]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'handshake_out1' to cell 'OBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:227]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'handshake_out2' to cell 'OBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:235]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'handshake_out3' to cell 'OBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:243]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'dleayed_trig_out1' to cell 'OBUF' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:250]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'dleayed_trig_out2' to cell 'OBUF' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:254]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'dleayed_trig_out3' to cell 'OBUF' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:258]
+INFO: [Synth 8-3491] module 'prescaler' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/prescaler.vhd:34' bound to instance 'per1' of component 'prescaler' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:265]
+INFO: [Synth 8-638] synthesizing module 'prescaler' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/prescaler.vhd:44]
+INFO: [Synth 8-226] default block is never used [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/prescaler.vhd:83]
+INFO: [Synth 8-3491] module 'prescaler_counter_binary_3' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/prescaler_counter_binary_3_stub.vhdl:5' bound to instance 'counterp' of component 'prescaler_counter_binary_3' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/prescaler.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'prescaler_counter_binary_3' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/prescaler_counter_binary_3_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'c_counter_binary_1' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_1_stub.vhdl:5' bound to instance 'prescaler_counter' of component 'c_counter_binary_1' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/prescaler.vhd:166]
+INFO: [Synth 8-256] done synthesizing module 'prescaler' (7#1) [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/prescaler.vhd:44]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'prescaler_delay_buffer' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:276]
+INFO: [Synth 8-3491] module 'pulse_gen' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/pulse_gen.vhd:34' bound to instance 'pulser_0p1_to_10Hz' of component 'pulse_gen' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:287]
+INFO: [Synth 8-638] synthesizing module 'pulse_gen' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/pulse_gen.vhd:42]
+INFO: [Synth 8-3491] module 'c_counter_binary_2' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_2_stub.vhdl:5' bound to instance 'c1' of component 'c_counter_binary_2' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/pulse_gen.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_2' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_2_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'c_counter_binary_2' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/synth_1/.Xil/Vivado-3729-localhost/realtime/c_counter_binary_2_stub.vhdl:5' bound to instance 'c2' of component 'c_counter_binary_2' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/pulse_gen.vhd:254]
+INFO: [Synth 8-256] done synthesizing module 'pulse_gen' (8#1) [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/pulse_gen.vhd:42]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'pulser_delay_buffer' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:295]
+INFO: [Synth 8-3491] module 'beam_current_monitor' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/beam_current_monitor.vhd:34' bound to instance 'prescaler_xor_pulser_counter' of component 'beam_current_monitor' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:319]
+INFO: [Synth 8-3491] module 'beam_current_monitor' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/beam_current_monitor.vhd:34' bound to instance 'prescaler_xor_pulser_AND_prescaler_delayed_counter' of component 'beam_current_monitor' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:327]
+INFO: [Synth 8-3491] module 'beam_current_monitor' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/beam_current_monitor.vhd:34' bound to instance 'pulser_delayed_AND_prescaler_xor_pulser_counter' of component 'beam_current_monitor' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:335]
+INFO: [Synth 8-3491] module 'handshake_unit' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/handshake_unit.vhd:7' bound to instance 'handshake_unit1' of component 'handshake_unit' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:346]
+INFO: [Synth 8-638] synthesizing module 'handshake_unit' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/handshake_unit.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'handshake_unit' (9#1) [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/handshake_unit.vhd:19]
+INFO: [Synth 8-3491] module 'beam_current_monitor' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/beam_current_monitor.vhd:34' bound to instance 'handshake_counter' of component 'beam_current_monitor' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:357]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'trigger_1_d' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:365]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'trigger_2_d' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:371]
+INFO: [Synth 8-3491] module 'one_ch_delay' declared at '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/one_ch_delay.vhd:36' bound to instance 'trigger_3_d' of component 'one_ch_delay' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:377]
+INFO: [Synth 8-256] done synthesizing module 'tlu_backend' (10#1) [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/tlu_backend.vhd:93]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'beam_current_ibufds' to cell 'IBUFDS' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/trigger_logic_axi.vhd:1126]
+INFO: [Synth 8-256] done synthesizing module 'trigger_logic_AXI' (11#1) [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/trigger_logic_axi.vhd:124]
+WARNING: [Synth 8-3331] design trigger_logic_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design trigger_logic_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design trigger_logic_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design trigger_logic_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design trigger_logic_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design trigger_logic_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1027.863 ; gain = 196.801 ; free physical = 22299 ; free virtual = 29037
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1027.863 ; gain = 196.801 ; free physical = 22298 ; free virtual = 29037
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/constrs_1/imports/new/ac701_trigger_logic_design.xdc]
+Finished Parsing XDC File [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/constrs_1/imports/new/ac701_trigger_logic_design.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  OBUFDS => OBUFDS: 9 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1403.496 ; gain = 0.000 ; free physical = 22085 ; free virtual = 28823
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 22084 ; free virtual = 28823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 22084 ; free virtual = 28823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 22084 ; free virtual = 28823
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "delay_count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "delay_count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "duty_zero" won't be mapped to RAM because address size (28) is larger than maximum supported(18)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'handshake_unit'
+INFO: [Synth 8-5544] ROM "sig_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                     Old Encoding 
+---------------------------------------------------------------------------------------------------
+                 state_0 |                              000 |                              000
+                 state_1 |                              001 |                              001
+                 state_2 |                              010 |                              010
+                 state_3 |                              011 |                              011
+                 state_4 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'handshake_unit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 22071 ; free virtual = 28809
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 15    
+	   2 Input      5 Bit       Adders := 23    
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 27    
+	               28 Bit    Registers := 4     
+	               12 Bit    Registers := 30    
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 27    
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 27    
+	                1 Bit    Registers := 119   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 27    
+	   5 Input     32 Bit        Muxes := 1     
+	  32 Input     32 Bit        Muxes := 24    
+	   4 Input      5 Bit        Muxes := 20    
+	  10 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 25    
+	   4 Input      1 Bit        Muxes := 58    
+	   2 Input      1 Bit        Muxes := 35    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module trigger_logic_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 26    
+	               28 Bit    Registers := 2     
+	               12 Bit    Registers := 15    
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 24    
+	  32 Input     32 Bit        Muxes := 24    
+	   2 Input      1 Bit        Muxes := 6     
+Module beam_current_monitor 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module riseing_edge_persist 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module coincidence_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+Module add_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+Module tlu_frontend 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 20    
+Module prescaler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+Module pulse_gen 
+Detailed RTL Component Info : 
++---Registers : 
+	               28 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 7     
+Module handshake_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module tlu_backend 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 22071 ; free virtual = 28809
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'u2_coincidence_unit/persist_fanin_int_reg[4:0]' into 'u1_coincidence_unit/persist_fanin_int_reg[4:0]' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/imports/moore.1424/xillinx/trigger_logic_ac701/trigger_logic_ac701.srcs/sources_1/new/coincidence_unit.vhd:84]
+INFO: [Synth 8-5544] ROM "u1_coincidence_unit/delay_count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "u2_coincidence_unit/delay_count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'u2_coincidence_unit/g1[0].rpn/last_sig_reg' into 'u1_coincidence_unit/g1[0].rpn/last_sig_reg' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:51]
+INFO: [Synth 8-4471] merging register 'u2_coincidence_unit/g1[1].rpn/last_sig_reg' into 'u1_coincidence_unit/g1[1].rpn/last_sig_reg' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:51]
+INFO: [Synth 8-4471] merging register 'u2_coincidence_unit/g1[2].rpn/last_sig_reg' into 'u1_coincidence_unit/g1[2].rpn/last_sig_reg' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:51]
+INFO: [Synth 8-4471] merging register 'u2_coincidence_unit/g1[3].rpn/last_sig_reg' into 'u1_coincidence_unit/g1[3].rpn/last_sig_reg' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:51]
+INFO: [Synth 8-4471] merging register 'u2_coincidence_unit/g1[4].rpn/last_sig_reg' into 'u1_coincidence_unit/g1[4].rpn/last_sig_reg' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:51]
+INFO: [Synth 8-4471] merging register 'u2_coincidence_unit/g1[5].rpn/last_sig_reg' into 'u1_coincidence_unit/g1[5].rpn/last_sig_reg' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:51]
+INFO: [Synth 8-4471] merging register 'u2_coincidence_unit/g1[6].rpn/last_sig_reg' into 'u1_coincidence_unit/g1[6].rpn/last_sig_reg' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:51]
+INFO: [Synth 8-4471] merging register 'u2_coincidence_unit/g1[7].rpn/last_sig_reg' into 'u1_coincidence_unit/g1[7].rpn/last_sig_reg' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:51]
+INFO: [Synth 8-4471] merging register 'u2_coincidence_unit/g1[8].rpn/last_sig_reg' into 'u1_coincidence_unit/g1[8].rpn/last_sig_reg' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:51]
+INFO: [Synth 8-4471] merging register 'u2_coincidence_unit/g1[9].rpn/last_sig_reg' into 'u1_coincidence_unit/g1[9].rpn/last_sig_reg' [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/new/riseing_edge_persist.vhd:51]
+INFO: [Synth 8-5545] ROM "pulser_0p1_to_10Hz/duty_zero" won't be mapped to RAM because address size (28) is larger than maximum supported(18)
+WARNING: [Synth 8-3331] design trigger_logic_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design trigger_logic_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design trigger_logic_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design trigger_logic_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design trigger_logic_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design trigger_logic_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 22072 ; free virtual = 28810
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 22072 ; free virtual = 28810
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (\u2_coincidence_unit/g1[0].rpn/count_reg[4] ) is unused and will be removed from module tlu_frontend.
+WARNING: [Synth 8-3332] Sequential element (\u2_coincidence_unit/g1[0].rpn/count_reg[3] ) is unused and will be removed from module tlu_frontend.
+WARNING: [Synth 8-3332] Sequential element (\u2_coincidence_unit/g1[0].rpn/count_reg[2] ) is unused and will be removed from module tlu_frontend.
+WARNING: [Synth 8-3332] Sequential element (\u2_coincidence_unit/g1[0].rpn/count_reg[1] ) is unused and will be removed from module tlu_frontend.
+WARNING: [Synth 8-3332] Sequential element (\u2_coincidence_unit/g1[0].rpn/count_reg[0] ) is unused and will be removed from module tlu_frontend.
+WARNING: [Synth 8-3332] Sequential element (\u2_coincidence_unit/g1[0].rpn/state_reg[1] ) is unused and will be removed from module tlu_frontend.
+WARNING: [Synth 8-3332] Sequential element (\u2_coincidence_unit/g1[0].rpn/state_reg[0] ) is unused and will be removed from module tlu_frontend.
+WARNING: [Synth 8-3332] Sequential element (\u2_coincidence_unit/g1[0].rpn/q_reg ) is unused and will be removed from module tlu_frontend.
+WARNING: [Synth 8-3332] Sequential element (\axi_bresp_reg[1] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\axi_bresp_reg[0] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\axi_awaddr_reg[1] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\axi_awaddr_reg[0] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\axi_araddr_reg[1] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\axi_araddr_reg[0] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\axi_rresp_reg[1] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\axi_rresp_reg[0] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[31] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[30] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[29] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[28] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[27] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[26] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[25] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[24] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[23] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[22] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[21] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[20] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[19] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[18] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[17] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[16] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[15] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[14] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[13] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[12] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[11] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[10] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[9] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[8] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[7] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[6] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[5] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[4] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[3] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[2] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg16_reg[1] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[31] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[30] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[29] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[28] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[27] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[26] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[25] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[24] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[23] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[22] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[21] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[20] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[19] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[18] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[17] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[16] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[15] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[14] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[13] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[12] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[11] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[10] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[9] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[8] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[7] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[6] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[5] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg25_reg[4] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[31] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[30] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[29] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[28] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[27] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[26] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[25] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[24] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[23] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[22] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[21] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[20] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[19] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[18] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[17] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[16] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[15] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[14] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[13] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[12] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[11] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[10] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[9] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[8] ) is unused and will be removed from module trigger_logic_AXI.
+WARNING: [Synth 8-3332] Sequential element (\slv_reg26_reg[7] ) is unused and will be removed from module trigger_logic_AXI.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 22057 ; free virtual = 28796
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 22057 ; free virtual = 28796
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 22057 ; free virtual = 28796
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 22007 ; free virtual = 28746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 22006 ; free virtual = 28745
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 21981 ; free virtual = 28720
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 21981 ; free virtual = 28720
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 21981 ; free virtual = 28720
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 21981 ; free virtual = 28720
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 21981 ; free virtual = 28720
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 21981 ; free virtual = 28720
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |c_counter_binary_1         |        18|
+|2     |prescaler_counter_binary_3 |         1|
+|3     |blk_mem_gen_1              |        15|
+|4     |c_counter_binary_2         |         2|
++------+---------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |blk_mem_gen_1_bbox              |     1|
+|2     |blk_mem_gen_1_bbox__1           |     1|
+|3     |blk_mem_gen_1_bbox__10          |     1|
+|4     |blk_mem_gen_1_bbox__11          |     1|
+|5     |blk_mem_gen_1_bbox__12          |     1|
+|6     |blk_mem_gen_1_bbox__13          |     1|
+|7     |blk_mem_gen_1_bbox__14          |     1|
+|8     |blk_mem_gen_1_bbox__2           |     1|
+|9     |blk_mem_gen_1_bbox__3           |     1|
+|10    |blk_mem_gen_1_bbox__4           |     1|
+|11    |blk_mem_gen_1_bbox__5           |     1|
+|12    |blk_mem_gen_1_bbox__6           |     1|
+|13    |blk_mem_gen_1_bbox__7           |     1|
+|14    |blk_mem_gen_1_bbox__8           |     1|
+|15    |blk_mem_gen_1_bbox__9           |     1|
+|16    |c_counter_binary_1_bbox         |     1|
+|17    |c_counter_binary_1_bbox_0       |     1|
+|18    |c_counter_binary_1_bbox_1       |     1|
+|19    |c_counter_binary_1_bbox_10      |     1|
+|20    |c_counter_binary_1_bbox_10__1   |     1|
+|21    |c_counter_binary_1_bbox_11      |     1|
+|22    |c_counter_binary_1_bbox_2       |     1|
+|23    |c_counter_binary_1_bbox_3       |     1|
+|24    |c_counter_binary_1_bbox_4       |     1|
+|25    |c_counter_binary_1_bbox_5       |     1|
+|26    |c_counter_binary_1_bbox_6       |     1|
+|27    |c_counter_binary_1_bbox_7       |     1|
+|28    |c_counter_binary_1_bbox_8       |     1|
+|29    |c_counter_binary_1_bbox_9       |     1|
+|30    |c_counter_binary_1_bbox_9__1    |     1|
+|31    |c_counter_binary_1_bbox_9__2    |     1|
+|32    |c_counter_binary_1_bbox_9__3    |     1|
+|33    |c_counter_binary_1_bbox_9__4    |     1|
+|34    |c_counter_binary_2_bbox         |     1|
+|35    |c_counter_binary_2_bbox_12      |     1|
+|36    |prescaler_counter_binary_3_bbox |     1|
+|37    |BUFG                            |     1|
+|38    |CARRY4                          |    84|
+|39    |LUT1                            |    61|
+|40    |LUT2                            |   364|
+|41    |LUT3                            |    43|
+|42    |LUT4                            |    67|
+|43    |LUT5                            |   149|
+|44    |LUT6                            |   317|
+|45    |MUXF7                           |    56|
+|46    |FDRE                            |  1174|
+|47    |FDSE                            |     6|
+|48    |IBUF                            |    57|
+|49    |IBUFDS                          |    11|
+|50    |OBUF                            |    44|
+|51    |OBUFDS                          |     9|
++------+--------------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------------+------------------------+------+
+|      |Instance                                               |Module                  |Cells |
++------+-------------------------------------------------------+------------------------+------+
+|1     |top                                                    |                        |  3028|
+|2     |  backend_logic                                        |tlu_backend             |   871|
+|3     |    handshake_counter                                  |beam_current_monitor_37 |    32|
+|4     |    handshake_unit1                                    |handshake_unit          |   244|
+|5     |    per1                                               |prescaler               |    75|
+|6     |    prescaler_delay_buffer                             |one_ch_delay_38         |    56|
+|7     |      adr_add1                                         |add_module_50           |    27|
+|8     |    prescaler_xor_pulser_AND_prescaler_delayed_counter |beam_current_monitor_39 |    30|
+|9     |    prescaler_xor_pulser_counter                       |beam_current_monitor_40 |    30|
+|10    |    pulser_0p1_to_10Hz                                 |pulse_gen               |   218|
+|11    |    pulser_delay_buffer                                |one_ch_delay_41         |    29|
+|12    |      adr_add1                                         |add_module_49           |    27|
+|13    |    pulser_delayed_AND_prescaler_xor_pulser_counter    |beam_current_monitor_42 |    58|
+|14    |    trigger_1_d                                        |one_ch_delay_43         |    28|
+|15    |      adr_add1                                         |add_module_48           |    27|
+|16    |    trigger_2_d                                        |one_ch_delay_44         |    28|
+|17    |      adr_add1                                         |add_module_47           |    27|
+|18    |    trigger_3_d                                        |one_ch_delay_45         |    28|
+|19    |      adr_add1                                         |add_module_46           |    27|
+|20    |  frontend_logic                                       |tlu_frontend            |  1370|
+|21    |    beam_current_counter                               |beam_current_monitor    |    89|
+|22    |    \gen_input_buffers[0].inputX                       |one_ch_delay            |    56|
+|23    |      adr_add1                                         |add_module_36           |    27|
+|24    |    \gen_input_buffers[1].inputX                       |one_ch_delay_0          |    29|
+|25    |      adr_add1                                         |add_module_35           |    27|
+|26    |    \gen_input_buffers[2].inputX                       |one_ch_delay_1          |    29|
+|27    |      adr_add1                                         |add_module_34           |    27|
+|28    |    \gen_input_buffers[3].inputX                       |one_ch_delay_2          |    29|
+|29    |      adr_add1                                         |add_module_33           |    27|
+|30    |    \gen_input_buffers[4].inputX                       |one_ch_delay_3          |    29|
+|31    |      adr_add1                                         |add_module_32           |    27|
+|32    |    \gen_input_buffers[5].inputX                       |one_ch_delay_4          |    29|
+|33    |      adr_add1                                         |add_module_31           |    27|
+|34    |    \gen_input_buffers[6].inputX                       |one_ch_delay_5          |    29|
+|35    |      adr_add1                                         |add_module_30           |    27|
+|36    |    \gen_input_buffers[7].inputX                       |one_ch_delay_6          |    29|
+|37    |      adr_add1                                         |add_module_29           |    27|
+|38    |    \gen_input_buffers[8].inputX                       |one_ch_delay_7          |    29|
+|39    |      adr_add1                                         |add_module_28           |    27|
+|40    |    \gen_input_buffers[9].inputX                       |one_ch_delay_8          |    29|
+|41    |      adr_add1                                         |add_module              |    27|
+|42    |    u1_coincidence_unit                                |coincidence_unit        |   276|
+|43    |      \g1[0].rpn                                       |riseing_edge_persist_18 |    21|
+|44    |      \g1[1].rpn                                       |riseing_edge_persist_19 |    21|
+|45    |      \g1[2].rpn                                       |riseing_edge_persist_20 |    22|
+|46    |      \g1[3].rpn                                       |riseing_edge_persist_21 |    21|
+|47    |      \g1[4].rpn                                       |riseing_edge_persist_22 |    21|
+|48    |      \g1[5].rpn                                       |riseing_edge_persist_23 |    23|
+|49    |      \g1[6].rpn                                       |riseing_edge_persist_24 |    21|
+|50    |      \g1[7].rpn                                       |riseing_edge_persist_25 |    22|
+|51    |      \g1[8].rpn                                       |riseing_edge_persist_26 |    21|
+|52    |      \g1[9].rpn                                       |riseing_edge_persist_27 |    22|
+|53    |    u2_coincidence_unit                                |coincidence_unit_9      |   293|
+|54    |      \g1[1].rpn                                       |riseing_edge_persist    |    21|
+|55    |      \g1[2].rpn                                       |riseing_edge_persist_10 |    20|
+|56    |      \g1[3].rpn                                       |riseing_edge_persist_11 |    21|
+|57    |      \g1[4].rpn                                       |riseing_edge_persist_12 |    20|
+|58    |      \g1[5].rpn                                       |riseing_edge_persist_13 |    21|
+|59    |      \g1[6].rpn                                       |riseing_edge_persist_14 |    20|
+|60    |      \g1[7].rpn                                       |riseing_edge_persist_15 |    21|
+|61    |      \g1[8].rpn                                       |riseing_edge_persist_16 |    20|
+|62    |      \g1[9].rpn                                       |riseing_edge_persist_17 |    21|
++------+-------------------------------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 21981 ; free virtual = 28720
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 520 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1403.496 ; gain = 80.281 ; free physical = 21980 ; free virtual = 28719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1403.496 ; gain = 572.434 ; free physical = 21980 ; free virtual = 28719
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 161 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+151 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1410.605 ; gain = 471.027 ; free physical = 21979 ; free virtual = 28718
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1442.621 ; gain = 0.000 ; free physical = 21978 ; free virtual = 28717
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 26 15:53:18 2018...

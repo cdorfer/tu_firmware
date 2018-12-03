@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Handshake_settings</class>
+ <widget class="QDialog" name="Handshake_settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>186</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>150</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Mask</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QCheckBox" name="checkM1">
+        <property name="text">
+         <string>M0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkM2">
+        <property name="text">
+         <string>M1</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkM3">
+        <property name="text">
+         <string>M2</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkM4">
+        <property name="text">
+         <string>M3</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>tv1 delay (n*2.5 ns)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="tv1_delay">
+        <property name="maximum">
+         <number>1000000006</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Handshake_settings</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>258</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Handshake_settings</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkM1</sender>
+   <signal>clicked()</signal>
+   <receiver>Handshake_settings</receiver>
+   <slot>on_check_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>34</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>44</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkM2</sender>
+   <signal>clicked()</signal>
+   <receiver>Handshake_settings</receiver>
+   <slot>on_check_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>130</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkM3</sender>
+   <signal>clicked()</signal>
+   <receiver>Handshake_settings</receiver>
+   <slot>on_check_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>225</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>261</x>
+     <y>59</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkM4</sender>
+   <signal>clicked()</signal>
+   <receiver>Handshake_settings</receiver>
+   <slot>on_check_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>81</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tv1_delay</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Handshake_settings</receiver>
+   <slot>on_delay_changed(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>238</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>204</x>
+     <y>136</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_check_changed()</slot>
+  <slot>on_delay_changed(int)</slot>
+ </slots>
+</ui>

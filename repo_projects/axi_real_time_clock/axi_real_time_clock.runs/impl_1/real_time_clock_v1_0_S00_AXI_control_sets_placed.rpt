@@ -1,0 +1,68 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Wed Oct  7 23:05:07 2015
+| Host         : cadence11 running 64-bit Scientific Linux CERN SLC release 6.7 (Carbon)
+| Command      : report_control_sets -verbose -file real_time_clock_v1_0_S00_AXI_control_sets_placed.rpt
+| Design       : real_time_clock_v1_0_S00_AXI
+| Device       : xc7a200t
+---------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    15 |
+| Minimum Number of register sites lost to control set restrictions |     7 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               4 |            1 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             128 |           28 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+----------------------+-----------------------+------------------+----------------+
+|      Clock Signal     |     Enable Signal    |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
++-----------------------+----------------------+-----------------------+------------------+----------------+
+|  S_AXI_ACLK_IBUF_BUFG |                      | axi_awaddr[3]_i_1_n_0 |                1 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG |                      |                       |                2 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg0[15]_i_1_n_0 | axi_awaddr[3]_i_1_n_0 |                2 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg0[23]_i_1_n_0 | axi_awaddr[3]_i_1_n_0 |                1 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg0[31]_i_1_n_0 | axi_awaddr[3]_i_1_n_0 |                1 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg0[7]_i_1_n_0  | axi_awaddr[3]_i_1_n_0 |                1 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg1[15]_i_1_n_0 | axi_awaddr[3]_i_1_n_0 |                2 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg1[23]_i_1_n_0 | axi_awaddr[3]_i_1_n_0 |                2 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg1[31]_i_1_n_0 | axi_awaddr[3]_i_1_n_0 |                1 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg1[7]_i_1_n_0  | axi_awaddr[3]_i_1_n_0 |                1 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg2[15]_i_1_n_0 | axi_awaddr[3]_i_1_n_0 |                3 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg2[23]_i_1_n_0 | axi_awaddr[3]_i_1_n_0 |                1 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg2[31]_i_1_n_0 | axi_awaddr[3]_i_1_n_0 |                2 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg2[7]_i_1_n_0  | axi_awaddr[3]_i_1_n_0 |                3 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg_rden         | axi_awaddr[3]_i_1_n_0 |                8 |             32 |
++-----------------------+----------------------+-----------------------+------------------+----------------+
+
+

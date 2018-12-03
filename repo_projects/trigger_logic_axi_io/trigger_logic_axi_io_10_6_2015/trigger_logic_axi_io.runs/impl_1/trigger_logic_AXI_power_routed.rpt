@@ -1,0 +1,419 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date             : Tue Oct  6 16:11:57 2015
+| Host             : cadence11 running 64-bit Scientific Linux CERN SLC release 6.7 (Carbon)
+| Command          : 
+| Design           : trigger_logic_AXI
+| Device           : xc7a200tfbg676-2
+| Design State     : Routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+---------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------+
+| Total On-Chip Power (W)  | 13.882 |
+| Dynamic (W)              | 13.669 |
+| Device Static (W)        | 0.213  |
+| Total Off-Chip Power (W) | 0.011  |
+| Effective TJA (C/W)      | 1.9    |
+| Max Ambient (C)          | 59.0   |
+| Junction Temperature (C) | 51.0   |
+| Confidence Level         | Low    |
+| Setting File             | ---    |
+| Simulation Activity File | ---    |
+| Design Nets Matched      | NA     |
++--------------------------+--------+
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |     1.681 |     1934 |       --- |             --- |
+|   LUT as Logic |     1.223 |      571 |    133800 |            0.43 |
+|   Register     |     0.266 |     1025 |    267600 |            0.38 |
+|   CARRY4       |     0.177 |       65 |     33450 |            0.19 |
+|   F7/F8 Muxes  |     0.010 |       44 |    133800 |            0.03 |
+|   BUFG         |     0.006 |        1 |        32 |            3.13 |
+|   Others       |     0.000 |      175 |       --- |             --- |
+| Signals        |     4.075 |     1768 |       --- |             --- |
+| Block RAM      |     1.457 |        6 |       365 |            1.64 |
+| DSPs           |     1.737 |       19 |       740 |            2.57 |
+| I/O            |     4.719 |      138 |       400 |           34.50 |
+| Static Power   |     0.213 |          |           |                 |
+| Total          |    13.882 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     9.317 |       9.231 |      0.086 |
+| Vccaux    |       1.800 |     0.443 |       0.406 |      0.037 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.370 |       0.365 |      0.005 |
+| Vcco18    |       1.800 |     1.502 |       1.497 |      0.005 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.113 |       0.110 |      0.003 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------------------------------+-----------+
+| Name                                                   | Power (W) |
++--------------------------------------------------------+-----------+
+| trigger_logic_AXI                                      |    13.669 |
+|   backend_logic                                        |     2.997 |
+|     handshake_counter                                  |     0.105 |
+|       beam_c                                           |     0.070 |
+|         U0                                             |     0.070 |
+|           i_synth                                      |     0.070 |
+|             i_baseip.i_xbip_counter                    |     0.070 |
+|               i_dsp48.i_dsp                            |     0.070 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.070 |
+|     handshake_unit1                                    |     0.333 |
+|       c0                                               |     0.277 |
+|         U0                                             |     0.277 |
+|           i_synth                                      |     0.277 |
+|             i_baseip.i_xbip_counter                    |     0.277 |
+|               i_dsp48.i_dsp                            |     0.261 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.261 |
+|               i_thresh_detect.i_norm.i_gate            |     0.015 |
+|                 tier_gen[1].i_tier                     |     0.015 |
+|                   loop_tiles[0].i_tile                 |     0.015 |
+|     per1                                               |     0.112 |
+|       counterp                                         |     0.007 |
+|         U0                                             |     0.007 |
+|           i_synth                                      |     0.007 |
+|             i_baseblox.i_baseblox_counter              |     0.007 |
+|               the_addsub                               |     0.007 |
+|                 no_pipelining.the_addsub               |     0.007 |
+|                   i_lut6.i_lut6_addsub                 |     0.007 |
+|                     i_q.i_simple.qreg                  |     0.002 |
+|       prescaler_counter                                |     0.069 |
+|         U0                                             |     0.069 |
+|           i_synth                                      |     0.069 |
+|             i_baseip.i_xbip_counter                    |     0.069 |
+|               i_dsp48.i_dsp                            |     0.069 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.069 |
+|     prescaler_delay_buffer                             |     0.308 |
+|       adr_add1                                         |     0.112 |
+|       delaymem                                         |     0.134 |
+|         U0                                             |     0.134 |
+|           inst_blk_mem_gen                             |     0.134 |
+|             gnativebmg.native_blk_mem_gen              |     0.134 |
+|               valid.cstr                               |     0.134 |
+|                 ramloop[0].ram.r                       |     0.134 |
+|                   prim_noinit.ram                      |     0.134 |
+|     prescaler_xor_pulser_AND_prescaler_delayed_counter |     0.075 |
+|       beam_c                                           |     0.071 |
+|         U0                                             |     0.071 |
+|           i_synth                                      |     0.071 |
+|             i_baseip.i_xbip_counter                    |     0.071 |
+|               i_dsp48.i_dsp                            |     0.071 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.071 |
+|     prescaler_xor_pulser_counter                       |     0.071 |
+|       beam_c                                           |     0.071 |
+|         U0                                             |     0.071 |
+|           i_synth                                      |     0.071 |
+|             i_baseip.i_xbip_counter                    |     0.071 |
+|               i_dsp48.i_dsp                            |     0.071 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.071 |
+|     pulser_0p1_to_10Hz                                 |     0.463 |
+|       c1                                               |     0.066 |
+|         U0                                             |     0.066 |
+|           i_synth                                      |     0.066 |
+|             i_baseip.i_xbip_counter                    |     0.066 |
+|               i_dsp48.i_dsp                            |     0.066 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.066 |
+|       c2                                               |     0.068 |
+|         U0                                             |     0.068 |
+|           i_synth                                      |     0.068 |
+|             i_baseip.i_xbip_counter                    |     0.068 |
+|               i_dsp48.i_dsp                            |     0.068 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.068 |
+|     pulser_delay_buffer                                |     0.297 |
+|       adr_add1                                         |     0.123 |
+|       delaymem                                         |     0.128 |
+|         U0                                             |     0.128 |
+|           inst_blk_mem_gen                             |     0.128 |
+|             gnativebmg.native_blk_mem_gen              |     0.128 |
+|               valid.cstr                               |     0.128 |
+|                 ramloop[0].ram.r                       |     0.128 |
+|                   prim_noinit.ram                      |     0.128 |
+|     pulser_delayed_AND_prescaler_xor_pulser_counter    |     0.119 |
+|       beam_c                                           |     0.070 |
+|         U0                                             |     0.070 |
+|           i_synth                                      |     0.070 |
+|             i_baseip.i_xbip_counter                    |     0.070 |
+|               i_dsp48.i_dsp                            |     0.070 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.070 |
+|   frontend_logic                                       |     5.153 |
+|     beam_current_counter                               |     0.175 |
+|       beam_c                                           |     0.071 |
+|         U0                                             |     0.071 |
+|           i_synth                                      |     0.071 |
+|             i_baseip.i_xbip_counter                    |     0.071 |
+|               i_dsp48.i_dsp                            |     0.071 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.071 |
+|     gen_input_buffers[0].inputX                        |     0.480 |
+|       adr_add1                                         |     0.113 |
+|       delaymem                                         |     0.136 |
+|         U0                                             |     0.136 |
+|           inst_blk_mem_gen                             |     0.136 |
+|             gnativebmg.native_blk_mem_gen              |     0.136 |
+|               valid.cstr                               |     0.136 |
+|                 ramloop[0].ram.r                       |     0.136 |
+|                   prim_noinit.ram                      |     0.136 |
+|     gen_input_buffers[1].inputX                        |     0.264 |
+|       adr_add1                                         |     0.123 |
+|       delaymem                                         |     0.136 |
+|         U0                                             |     0.136 |
+|           inst_blk_mem_gen                             |     0.136 |
+|             gnativebmg.native_blk_mem_gen              |     0.136 |
+|               valid.cstr                               |     0.136 |
+|                 ramloop[0].ram.r                       |     0.136 |
+|                   prim_noinit.ram                      |     0.136 |
+|     gen_input_buffers[2].inputX                        |     0.252 |
+|       adr_add1                                         |     0.108 |
+|       delaymem                                         |     0.139 |
+|         U0                                             |     0.139 |
+|           inst_blk_mem_gen                             |     0.139 |
+|             gnativebmg.native_blk_mem_gen              |     0.139 |
+|               valid.cstr                               |     0.139 |
+|                 ramloop[0].ram.r                       |     0.139 |
+|                   prim_noinit.ram                      |     0.139 |
+|     gen_input_buffers[3].inputX                        |     0.264 |
+|       adr_add1                                         |     0.118 |
+|       delaymem                                         |     0.137 |
+|         U0                                             |     0.137 |
+|           inst_blk_mem_gen                             |     0.137 |
+|             gnativebmg.native_blk_mem_gen              |     0.137 |
+|               valid.cstr                               |     0.137 |
+|                 ramloop[0].ram.r                       |     0.137 |
+|                   prim_noinit.ram                      |     0.137 |
+|     gen_input_buffers[4].inputX                        |     0.248 |
+|       adr_add1                                         |     0.102 |
+|       delaymem                                         |     0.138 |
+|         U0                                             |     0.138 |
+|           inst_blk_mem_gen                             |     0.138 |
+|             gnativebmg.native_blk_mem_gen              |     0.138 |
+|               valid.cstr                               |     0.138 |
+|                 ramloop[0].ram.r                       |     0.138 |
+|                   prim_noinit.ram                      |     0.138 |
+|     gen_input_buffers[5].inputX                        |     0.266 |
+|       adr_add1                                         |     0.125 |
+|       delaymem                                         |     0.133 |
+|         U0                                             |     0.133 |
+|           inst_blk_mem_gen                             |     0.133 |
+|             gnativebmg.native_blk_mem_gen              |     0.133 |
+|               valid.cstr                               |     0.133 |
+|                 ramloop[0].ram.r                       |     0.133 |
+|                   prim_noinit.ram                      |     0.133 |
+|     gen_input_buffers[6].inputX                        |     0.251 |
+|       adr_add1                                         |     0.108 |
+|       delaymem                                         |     0.138 |
+|         U0                                             |     0.138 |
+|           inst_blk_mem_gen                             |     0.138 |
+|             gnativebmg.native_blk_mem_gen              |     0.138 |
+|               valid.cstr                               |     0.138 |
+|                 ramloop[0].ram.r                       |     0.138 |
+|                   prim_noinit.ram                      |     0.138 |
+|     gen_input_buffers[7].inputX                        |     0.247 |
+|       adr_add1                                         |     0.110 |
+|       delaymem                                         |     0.132 |
+|         U0                                             |     0.132 |
+|           inst_blk_mem_gen                             |     0.132 |
+|             gnativebmg.native_blk_mem_gen              |     0.132 |
+|               valid.cstr                               |     0.132 |
+|                 ramloop[0].ram.r                       |     0.132 |
+|                   prim_noinit.ram                      |     0.132 |
+|     gen_input_buffers[8].inputX                        |     0.254 |
+|       adr_add1                                         |     0.110 |
+|       delaymem                                         |     0.135 |
+|         U0                                             |     0.135 |
+|           inst_blk_mem_gen                             |     0.135 |
+|             gnativebmg.native_blk_mem_gen              |     0.135 |
+|               valid.cstr                               |     0.135 |
+|                 ramloop[0].ram.r                       |     0.135 |
+|                   prim_noinit.ram                      |     0.135 |
+|     gen_input_buffers[9].inputX                        |     0.247 |
+|       adr_add1                                         |     0.106 |
+|       delaymem                                         |     0.133 |
+|         U0                                             |     0.133 |
+|           inst_blk_mem_gen                             |     0.133 |
+|             gnativebmg.native_blk_mem_gen              |     0.133 |
+|               valid.cstr                               |     0.133 |
+|                 ramloop[0].ram.r                       |     0.133 |
+|                   prim_noinit.ram                      |     0.133 |
+|     gen_trig_counters[0].trig_countn                   |     0.130 |
+|       c16                                              |     0.117 |
+|         U0                                             |     0.117 |
+|           i_synth                                      |     0.117 |
+|             i_baseip.i_xbip_counter                    |     0.117 |
+|               i_dsp48.i_dsp                            |     0.117 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.117 |
+|       trig_gen                                         |     0.013 |
+|     gen_trig_counters[1].trig_countn                   |     0.125 |
+|       c16                                              |     0.113 |
+|         U0                                             |     0.113 |
+|           i_synth                                      |     0.113 |
+|             i_baseip.i_xbip_counter                    |     0.113 |
+|               i_dsp48.i_dsp                            |     0.113 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.113 |
+|       trig_gen                                         |     0.012 |
+|     gen_trig_counters[2].trig_countn                   |     0.124 |
+|       c16                                              |     0.115 |
+|         U0                                             |     0.115 |
+|           i_synth                                      |     0.115 |
+|             i_baseip.i_xbip_counter                    |     0.115 |
+|               i_dsp48.i_dsp                            |     0.115 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.115 |
+|       trig_gen                                         |     0.009 |
+|     gen_trig_counters[3].trig_countn                   |     0.192 |
+|       c16                                              |     0.117 |
+|         U0                                             |     0.117 |
+|           i_synth                                      |     0.117 |
+|             i_baseip.i_xbip_counter                    |     0.117 |
+|               i_dsp48.i_dsp                            |     0.117 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.117 |
+|       trig_gen                                         |     0.008 |
+|     gen_trig_counters[4].trig_countn                   |     0.128 |
+|       c16                                              |     0.115 |
+|         U0                                             |     0.115 |
+|           i_synth                                      |     0.115 |
+|             i_baseip.i_xbip_counter                    |     0.115 |
+|               i_dsp48.i_dsp                            |     0.115 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.115 |
+|       trig_gen                                         |     0.013 |
+|     gen_trig_counters[5].trig_countn                   |     0.127 |
+|       c16                                              |     0.115 |
+|         U0                                             |     0.115 |
+|           i_synth                                      |     0.115 |
+|             i_baseip.i_xbip_counter                    |     0.115 |
+|               i_dsp48.i_dsp                            |     0.115 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.115 |
+|       trig_gen                                         |     0.013 |
+|     gen_trig_counters[6].trig_countn                   |     0.127 |
+|       c16                                              |     0.115 |
+|         U0                                             |     0.115 |
+|           i_synth                                      |     0.115 |
+|             i_baseip.i_xbip_counter                    |     0.115 |
+|               i_dsp48.i_dsp                            |     0.115 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.115 |
+|       trig_gen                                         |     0.012 |
+|     gen_trig_counters[7].trig_countn                   |     0.156 |
+|       c16                                              |     0.114 |
+|         U0                                             |     0.114 |
+|           i_synth                                      |     0.114 |
+|             i_baseip.i_xbip_counter                    |     0.114 |
+|               i_dsp48.i_dsp                            |     0.114 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.114 |
+|       trig_gen                                         |     0.013 |
+|     gen_trig_counters[8].trig_countn                   |     0.120 |
+|       c16                                              |     0.115 |
+|         U0                                             |     0.115 |
+|           i_synth                                      |     0.115 |
+|             i_baseip.i_xbip_counter                    |     0.115 |
+|               i_dsp48.i_dsp                            |     0.115 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.115 |
+|       trig_gen                                         |     0.005 |
+|     gen_trig_counters[9].trig_countn                   |     0.126 |
+|       c16                                              |     0.118 |
+|         U0                                             |     0.118 |
+|           i_synth                                      |     0.118 |
+|             i_baseip.i_xbip_counter                    |     0.118 |
+|               i_dsp48.i_dsp                            |     0.118 |
+|                 i_vx7.i_dsp48e_wrap                    |     0.118 |
+|       trig_gen                                         |     0.008 |
+|     u1_coincidence_unit                                |     0.457 |
+|       g1[0].rpn                                        |     0.038 |
+|       g1[1].rpn                                        |     0.040 |
+|       g1[2].rpn                                        |     0.048 |
+|       g1[3].rpn                                        |     0.041 |
+|       g1[4].rpn                                        |     0.047 |
+|       g1[5].rpn                                        |     0.053 |
+|       g1[6].rpn                                        |     0.040 |
+|       g1[7].rpn                                        |     0.037 |
+|       g1[8].rpn                                        |     0.039 |
+|       g1[9].rpn                                        |     0.037 |
++--------------------------------------------------------+-----------+
+
+

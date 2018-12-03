@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_pulser_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_pulser" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wave_markers>
+      <marker label="" time="9372179000" />
+      <marker label="" time="9057498000" />
+   </wave_markers>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_pulser/uut/divisor">
+      <obj_property name="ElementShortName">divisor[27:0]</obj_property>
+      <obj_property name="ObjectShortName">divisor[27:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_pulser/uut/duty">
+      <obj_property name="ElementShortName">duty[27:0]</obj_property>
+      <obj_property name="ObjectShortName">duty[27:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_pulser/uut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_pulser/uut/q">
+      <obj_property name="ElementShortName">q</obj_property>
+      <obj_property name="ObjectShortName">q</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_pulser/uut/buf_q">
+      <obj_property name="ElementShortName">buf_q</obj_property>
+      <obj_property name="ObjectShortName">buf_q</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_pulser/uut/c_divide_4">
+      <obj_property name="ElementShortName">c_divide_4</obj_property>
+      <obj_property name="ObjectShortName">c_divide_4</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_pulser/uut/state">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_pulser/uut/short_cyle">
+      <obj_property name="ElementShortName">short_cyle</obj_property>
+      <obj_property name="ObjectShortName">short_cyle</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_pulser/uut/fast_count">
+      <obj_property name="ElementShortName">fast_count[27:0]</obj_property>
+      <obj_property name="ObjectShortName">fast_count[27:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_pulser/uut/slow_count">
+      <obj_property name="ElementShortName">slow_count[27:0]</obj_property>
+      <obj_property name="ObjectShortName">slow_count[27:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_pulser/uut/triger_c_slow">
+      <obj_property name="ElementShortName">triger_c_slow</obj_property>
+      <obj_property name="ObjectShortName">triger_c_slow</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_pulser/uut/triger_c_fast">
+      <obj_property name="ElementShortName">triger_c_fast</obj_property>
+      <obj_property name="ObjectShortName">triger_c_fast</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_pulser/uut/slow_count_reset">
+      <obj_property name="ElementShortName">slow_count_reset</obj_property>
+      <obj_property name="ObjectShortName">slow_count_reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_pulser/uut/fast_count_reset">
+      <obj_property name="ElementShortName">fast_count_reset</obj_property>
+      <obj_property name="ObjectShortName">fast_count_reset</obj_property>
+   </wvobject>
+</wave_config>

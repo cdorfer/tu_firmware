@@ -1,0 +1,390 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Sep 30 17:59:25 2015
+# Process ID: 4705
+# Log file: /n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.runs/prescaler_counter_binary_3_synth_1/prescaler_counter_binary_3.vds
+# Journal file: /n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.runs/prescaler_counter_binary_3_synth_1/vivado.jou
+#-----------------------------------------------------------
+source prescaler_counter_binary_3.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/n/15/moore.1424/xillinx/ip_repo/myip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2015.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'prescaler_counter_binary_3' generated file not found '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/prescaler_counter_binary_3.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'prescaler_counter_binary_3' generated file not found '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/prescaler_counter_binary_3_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'prescaler_counter_binary_3' generated file not found '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/prescaler_counter_binary_3_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'prescaler_counter_binary_3' generated file not found '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/prescaler_counter_binary_3_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'prescaler_counter_binary_3' generated file not found '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/prescaler_counter_binary_3_funcsim.vhdl'. Please regenerate to continue.
+Command: synth_design -top prescaler_counter_binary_3 -part xc7a200tfbg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1059.145 ; gain = 164.523 ; free physical = 3180 ; free virtual = 27656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'prescaler_counter_binary_3' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/synth/prescaler_counter_binary_3.vhd:68]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0' declared at '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:106' bound to instance 'U0' of component 'c_counter_binary_v12_0' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/synth/prescaler_counter_binary_3.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:147]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_viv' declared at '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1856' bound to instance 'i_synth' of component 'c_counter_binary_v12_0_viv' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0_viv' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1910]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_legacy' declared at '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:323' bound to instance 'i_baseblox_counter' of component 'c_counter_binary_v12_0_legacy' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:2036]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0_legacy' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:380]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:514]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:518]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:522]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:525]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:528]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:531]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:534]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:538]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:541]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:544]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:547]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:550]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:553]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:556]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:559]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:562]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:565]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:568]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:586]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:591]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:595]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:600]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:605]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:622]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:628]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:648]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:653]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:664]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:667]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:671]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:676]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:681]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:686]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:691]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:697]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:700]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:703]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:708]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_legacy' declared at '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5532' bound to instance 'the_addsub' of component 'c_addsub_v12_0_legacy' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1099]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_legacy' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1830]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1833]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1837]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1840]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1843]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1846]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1849]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1852]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1855]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1858]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1861]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1864]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1867]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1870]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1873]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1876]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1879]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1882]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1885]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1888]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1891]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1894]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1897]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1900]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1903]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1906]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1909]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1912]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1915]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1918]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1921]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1924]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1929]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1934]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1937]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1942]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1951]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1955]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1998]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_fabric_legacy' declared at '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5268' bound to instance 'the_addsub' of component 'c_addsub_v12_0_fabric_legacy' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5899]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_fabric_legacy' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_lut6_legacy' declared at '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2281' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_lut6_legacy' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5337]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_lut6_legacy' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2376]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2380]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_viv' declared at '/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:321' bound to instance 'qreg' of component 'c_reg_fd_v12_0_viv' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2930]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_viv' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:367]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:368]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:369]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:370]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:371]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:372]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:373]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Common 17-14] Message 'Synth 8-312' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_viv' (1#1) [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:351]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3254]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3262]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3274]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3296]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3304]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_lut6_legacy' (2#1) [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2333]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_fabric_legacy' (3#1) [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5320]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_legacy' (4#1) [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5608]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_legacy' (5#1) [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:380]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_viv' (6#1) [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1910]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0' (7#1) [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'prescaler_counter_binary_3' (8#1) [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/synth/prescaler_counter_binary_3.vhd:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1103.422 ; gain = 208.801 ; free physical = 3137 ; free virtual = 27613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1103.422 ; gain = 208.801 ; free physical = 3137 ; free virtual = 27613
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/prescaler_counter_binary_3_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/prescaler_counter_binary_3_ooc.xdc] for cell 'U0'
+Parsing XDC File [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.runs/prescaler_counter_binary_3_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.runs/prescaler_counter_binary_3_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1459.039 ; gain = 0.000 ; free physical = 2868 ; free virtual = 27344
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2867 ; free virtual = 27343
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2867 ; free virtual = 27343
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.runs/prescaler_counter_binary_3_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2867 ; free virtual = 27343
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2862 ; free virtual = 27338
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2862 ; free virtual = 27338
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2862 ; free virtual = 27338
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2862 ; free virtual = 27338
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2862 ; free virtual = 27338
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2862 ; free virtual = 27338
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2862 ; free virtual = 27338
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2861 ; free virtual = 27337
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2861 ; free virtual = 27337
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2861 ; free virtual = 27337
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2861 ; free virtual = 27337
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2861 ; free virtual = 27337
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2861 ; free virtual = 27337
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2861 ; free virtual = 27337
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2861 ; free virtual = 27337
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |MUXCY |     9|
+|3     |XORCY |    10|
+|4     |FDRE  |    10|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2861 ; free virtual = 27337
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1459.039 ; gain = 89.281 ; free physical = 2861 ; free virtual = 27338
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1459.039 ; gain = 564.418 ; free physical = 2861 ; free virtual = 27338
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/prescaler_counter_binary_3_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/n/15/moore.1424/xillinx/trigger_logic_axi_io/trigger_logic_axi_io.srcs/sources_1/ip/prescaler_counter_binary_3/prescaler_counter_binary_3_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1459.039 ; gain = 454.902 ; free physical = 2861 ; free virtual = 27337
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1459.039 ; gain = 0.000 ; free physical = 2861 ; free virtual = 27337
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 18:00:27 2015...

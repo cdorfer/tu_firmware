@@ -1,0 +1,461 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Dec  3 10:35:42 2018
+# Process ID: 30741
+# Log file: /home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/impl_1/trigger_logic_AXI.vdi
+# Journal file: /home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source trigger_logic_AXI.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'backend_logic/prescaler_delay_buffer/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'backend_logic/pulser_delay_buffer/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'backend_logic/trigger_1_d/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'backend_logic/trigger_2_d/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'backend_logic/trigger_3_d/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'frontend_logic/gen_input_buffers[0].inputX/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'frontend_logic/gen_input_buffers[1].inputX/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'frontend_logic/gen_input_buffers[2].inputX/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'frontend_logic/gen_input_buffers[3].inputX/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'frontend_logic/gen_input_buffers[4].inputX/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'frontend_logic/gen_input_buffers[5].inputX/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'frontend_logic/gen_input_buffers[6].inputX/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'frontend_logic/gen_input_buffers[7].inputX/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'frontend_logic/gen_input_buffers[8].inputX/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'frontend_logic/gen_input_buffers[9].inputX/delaymem'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'backend_logic/handshake_counter/beam_c'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'backend_logic/per1/prescaler_counter'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'backend_logic/prescaler_xor_pulser_AND_prescaler_delayed_counter/beam_c'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'backend_logic/prescaler_xor_pulser_counter/beam_c'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'backend_logic/pulser_delayed_AND_prescaler_xor_pulser_counter/beam_c'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/beam_current_counter/beam_c'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/u1_coincidence_unit/q_count'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/u2_coincidence_unit/q_count'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/gen_trig_counters[0].trig_countn'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/gen_trig_counters[1].trig_countn'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/gen_trig_counters[2].trig_countn'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/gen_trig_counters[3].trig_countn'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/gen_trig_counters[4].trig_countn'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/gen_trig_counters[5].trig_countn'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/gen_trig_counters[6].trig_countn'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/gen_trig_counters[7].trig_countn'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/gen_trig_counters[8].trig_countn'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp' for cell 'frontend_logic/gen_trig_counters[9].trig_countn'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_2_synth_1/c_counter_binary_2.dcp' for cell 'backend_logic/pulser_0p1_to_10Hz/c1'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_2_synth_1/c_counter_binary_2.dcp' for cell 'backend_logic/pulser_0p1_to_10Hz/c2'
+INFO: [Project 1-454] Reading design checkpoint '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/prescaler_counter_binary_3_synth_1/prescaler_counter_binary_3.dcp' for cell 'backend_logic/per1/counterp'
+INFO: [Netlist 29-17] Analyzing 199 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/constrs_1/imports/new/ac701_trigger_logic_design.xdc]
+Finished Parsing XDC File [/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.srcs/constrs_1/imports/new/ac701_trigger_logic_design.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_1_synth_1/c_counter_binary_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_2_synth_1/c_counter_binary_2.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/c_counter_binary_2_synth_1/c_counter_binary_2.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/prescaler_counter_binary_3_synth_1/prescaler_counter_binary_3.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  OBUFDS => OBUFDS: 9 instances
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-1223] The version limit for your license is '2018.12' and will expire in 28 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1276.754 ; gain = 12.027 ; free physical = 19109 ; free virtual = 27384
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 21a02a7d5
+
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1779.426 ; gain = 0.000 ; free physical = 18740 ; free virtual = 27015
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 21a02a7d5
+
+Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1779.426 ; gain = 0.000 ; free physical = 18739 ; free virtual = 27013
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 2872 unconnected nets.
+INFO: [Opt 31-11] Eliminated 73 unconnected cells.
+Phase 3 Sweep | Checksum: 201764230
+
+Time (s): cpu = 00:00:00.60 ; elapsed = 00:00:00.59 . Memory (MB): peak = 1779.426 ; gain = 0.000 ; free physical = 18738 ; free virtual = 27013
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1779.426 ; gain = 0.000 ; free physical = 18738 ; free virtual = 27013
+Ending Logic Optimization Task | Checksum: 201764230
+
+Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.60 . Memory (MB): peak = 1779.426 ; gain = 0.000 ; free physical = 18738 ; free virtual = 27013
+Implement Debug Cores | Checksum: 186feb9ac
+Logic Optimization | Checksum: 186feb9ac
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.12 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 15 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 30
+Ending PowerOpt Patch Enables Task | Checksum: 201764230
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1843.426 ; gain = 0.000 ; free physical = 18685 ; free virtual = 26960
+Ending Power Optimization Task | Checksum: 201764230
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1843.426 ; gain = 64.000 ; free physical = 18685 ; free virtual = 26960
+INFO: [Common 17-83] Releasing license: Implementation
+97 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1843.426 ; gain = 586.703 ; free physical = 18685 ; free virtual = 26960
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1875.441 ; gain = 0.000 ; free physical = 18684 ; free virtual = 26959
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/impl_1/trigger_logic_AXI_drc_opted.rpt.
+INFO: [#UNDEF] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-1223] The version limit for your license is '2018.12' and will expire in 28 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 13c092d6e
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1875.445 ; gain = 0.000 ; free physical = 18649 ; free virtual = 26924
+
+Phase 2 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1875.445 ; gain = 0.000 ; free physical = 18649 ; free virtual = 26924
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1875.445 ; gain = 0.000 ; free physical = 18649 ; free virtual = 26924
+
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1 Pre-Place Cells
+Phase 2.1.1 Pre-Place Cells | Checksum: 80739654
+
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1875.445 ; gain = 0.000 ; free physical = 18649 ; free virtual = 26924
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.2 IO & Clk Clean Up
+Phase 2.1.2 IO & Clk Clean Up | Checksum: 80739654
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1923.465 ; gain = 48.020 ; free physical = 18648 ; free virtual = 26923
+
+Phase 2.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.3 Implementation Feasibility check On IDelay | Checksum: 80739654
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1923.465 ; gain = 48.020 ; free physical = 18648 ; free virtual = 26923
+
+Phase 2.1.4 Commit IO Placement
+Phase 2.1.4 Commit IO Placement | Checksum: e009152e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1923.465 ; gain = 48.020 ; free physical = 18648 ; free virtual = 26923
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 11b8373ad
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1923.465 ; gain = 48.020 ; free physical = 18648 ; free virtual = 26923
+
+Phase 2.2 Build Placer Netlist Model
+
+Phase 2.2.1 Place Init Design
+Phase 2.2.1 Place Init Design | Checksum: 1373d9313
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1923.465 ; gain = 48.020 ; free physical = 18648 ; free virtual = 26923
+Phase 2.2 Build Placer Netlist Model | Checksum: 1373d9313
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1923.465 ; gain = 48.020 ; free physical = 18648 ; free virtual = 26923
+
+Phase 2.3 Constrain Clocks/Macros
+
+Phase 2.3.1 Constrain Global/Regional Clocks
+Phase 2.3.1 Constrain Global/Regional Clocks | Checksum: 1373d9313
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1923.465 ; gain = 48.020 ; free physical = 18648 ; free virtual = 26923
+Phase 2.3 Constrain Clocks/Macros | Checksum: 1373d9313
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1923.465 ; gain = 48.020 ; free physical = 18648 ; free virtual = 26923
+Phase 2 Placer Initialization | Checksum: 1373d9313
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1923.465 ; gain = 48.020 ; free physical = 18648 ; free virtual = 26923
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 1061257dd
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18631 ; free virtual = 26906
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 1061257dd
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18631 ; free virtual = 26906
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 1881f40e8
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18631 ; free virtual = 26906
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 1f217bae5
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18631 ; free virtual = 26906
+
+Phase 4.4 Small Shape Detail Placement
+
+Phase 4.4.1 Commit Small Macros & Core Logic
+
+Phase 4.4.1.1 Commit Slice Clusters
+Phase 4.4.1.1 Commit Slice Clusters | Checksum: 1b9810374
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+Phase 4.4.1 Commit Small Macros & Core Logic | Checksum: 1b9810374
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1b9810374
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1b9810374
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+Phase 4.4 Small Shape Detail Placement | Checksum: 1b9810374
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+
+Phase 4.5 Re-assign LUT pins
+Phase 4.5 Re-assign LUT pins | Checksum: 1b9810374
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+Phase 4 Detail Placement | Checksum: 1b9810374
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 1cd587039
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+
+Phase 5.2 Post Commit Optimization
+Phase 5.2 Post Commit Optimization | Checksum: 1cd587039
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 1cd587039
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 1cd587039
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+
+Phase 5.5 Placer Reporting
+Phase 5.5 Placer Reporting | Checksum: 1cd587039
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 1a1fd8452
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 1a1fd8452
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+Ending Placer Task | Checksum: 15ed9ea03
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 1969.480 ; gain = 94.035 ; free physical = 18618 ; free virtual = 26893
+INFO: [Common 17-83] Releasing license: Implementation
+111 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.54 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1969.480 ; gain = 0.000 ; free physical = 18615 ; free virtual = 26893
+report_io: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1969.480 ; gain = 0.000 ; free physical = 18617 ; free virtual = 26893
+report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1969.480 ; gain = 0.000 ; free physical = 18601 ; free virtual = 26882
+report_control_sets: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1969.480 ; gain = 0.000 ; free physical = 18601 ; free virtual = 26882
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-1223] The version limit for your license is '2018.12' and will expire in 28 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 144a7b38c
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:34 . Memory (MB): peak = 2080.711 ; gain = 111.230 ; free physical = 18436 ; free virtual = 26713
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Pre Route Cleanup
+Phase 2.1 Pre Route Cleanup | Checksum: 144a7b38c
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:34 . Memory (MB): peak = 2091.699 ; gain = 122.219 ; free physical = 18402 ; free virtual = 26678
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 1015e4892
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:34 . Memory (MB): peak = 2107.215 ; gain = 137.734 ; free physical = 18386 ; free virtual = 26663
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1c172c1b5
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:35 . Memory (MB): peak = 2107.215 ; gain = 137.734 ; free physical = 18386 ; free virtual = 26663
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 101
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 1570cb776
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:35 . Memory (MB): peak = 2107.215 ; gain = 137.734 ; free physical = 18386 ; free virtual = 26663
+Phase 4 Rip-up And Reroute | Checksum: 1570cb776
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:35 . Memory (MB): peak = 2107.215 ; gain = 137.734 ; free physical = 18386 ; free virtual = 26663
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 1570cb776
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:35 . Memory (MB): peak = 2107.215 ; gain = 137.734 ; free physical = 18386 ; free virtual = 26662
+
+Phase 6 Post Hold Fix
+Phase 6 Post Hold Fix | Checksum: 1570cb776
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:35 . Memory (MB): peak = 2107.215 ; gain = 137.734 ; free physical = 18386 ; free virtual = 26662
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.241846 %
+  Global Horizontal Routing Utilization  = 0.401289 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 44.1441%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 34.2342%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 38.2353%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 50%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1570cb776
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:35 . Memory (MB): peak = 2107.215 ; gain = 137.734 ; free physical = 18386 ; free virtual = 26663
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1570cb776
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:35 . Memory (MB): peak = 2107.215 ; gain = 137.734 ; free physical = 18386 ; free virtual = 26663
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 12508b59e
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:35 . Memory (MB): peak = 2107.215 ; gain = 137.734 ; free physical = 18387 ; free virtual = 26663
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:35 . Memory (MB): peak = 2107.215 ; gain = 137.734 ; free physical = 18387 ; free virtual = 26663
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+120 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 2107.215 ; gain = 137.734 ; free physical = 18387 ; free virtual = 26663
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2107.215 ; gain = 0.000 ; free physical = 18383 ; free virtual = 26663
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/anon/Desktop/FirmwareNEU/repo_projects/trigger_logic_axi_io/trigger_logic_axi_io.runs/impl_1/trigger_logic_AXI_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  3 10:36:48 2018...

@@ -1,0 +1,132 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon Dec  3 10:36:09 2018
+| Host         : localhost running 64-bit Ubuntu 18.04.1 LTS
+| Command      : report_control_sets -verbose -file trigger_logic_AXI_control_sets_placed.rpt
+| Design       : trigger_logic_AXI
+| Device       : xc7a200t
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    79 |
+| Minimum Number of register sites lost to control set restrictions |   170 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             579 |          145 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             140 |           70 |
+| Yes          | No                    | No                     |              11 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             460 |          162 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+-------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+|      Clock Signal     |                           Enable Signal                           |                       Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++-----------------------+-------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg23[11]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                2 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg21[27]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                2 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg8[11]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                1 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg9[11]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                1 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg20[11]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                1 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg1[11]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                2 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg0[11]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                1 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg22[27]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                1 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg4[11]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                2 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg3[11]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                1 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg31[11]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                1 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg2[11]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                3 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg7[11]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                2 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg6[11]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                1 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg5[11]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                1 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg25[3]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                1 |              4 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u1_coincidence_unit/g1[0].rpn/count[4]_i_1_n_0     | frontend_logic/u1_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u1_coincidence_unit/g1[2].rpn/count[4]_i_1__1_n_0  | frontend_logic/u1_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u1_coincidence_unit/g1[4].rpn/count[4]_i_1__3_n_0  | frontend_logic/u1_coincidence_unit/count                     |                2 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u1_coincidence_unit/g1[3].rpn/count[4]_i_1__2_n_0  | frontend_logic/u1_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u1_coincidence_unit/g1[1].rpn/count[4]_i_1__0_n_0  | frontend_logic/u1_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | axi_awready0                                                      | axi_awready_i_1_n_0                                          |                2 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | axi_arready0                                                      | axi_awready_i_1_n_0                                          |                2 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg28[4]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                2 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg27[4]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                2 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u2_coincidence_unit/delay_count[4]_i_2__0_n_0      | frontend_logic/u2_coincidence_unit/delay_count[4]_i_1__0_n_0 |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u2_coincidence_unit/g1[8].rpn/count[4]_i_1__16_n_0 | frontend_logic/u2_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u2_coincidence_unit/g1[9].rpn/count[4]_i_1__17_n_0 | frontend_logic/u2_coincidence_unit/count                     |                2 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | backend_logic/per1/delay_count[4]_i_2__1_n_0                      | backend_logic/per1/delay_count[4]_i_1__1_n_0                 |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u2_coincidence_unit/g1[1].rpn/count[4]_i_1__9_n_0  | frontend_logic/u2_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u2_coincidence_unit/g1[7].rpn/count[4]_i_1__15_n_0 | frontend_logic/u2_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u2_coincidence_unit/g1[2].rpn/count[4]_i_1__10_n_0 | frontend_logic/u2_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u2_coincidence_unit/g1[6].rpn/count[4]_i_1__14_n_0 | frontend_logic/u2_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u2_coincidence_unit/g1[5].rpn/count[4]_i_1__13_n_0 | frontend_logic/u2_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u2_coincidence_unit/g1[4].rpn/count[4]_i_1__12_n_0 | frontend_logic/u2_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u2_coincidence_unit/g1[3].rpn/count[4]_i_1__11_n_0 | frontend_logic/u2_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u1_coincidence_unit/sel                            | frontend_logic/u1_coincidence_unit/p_0_in                    |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u1_coincidence_unit/g1[9].rpn/count[4]_i_1__8_n_0  | frontend_logic/u1_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u1_coincidence_unit/g1[8].rpn/count[4]_i_1__7_n_0  | frontend_logic/u1_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u1_coincidence_unit/g1[5].rpn/count[4]_i_1__4_n_0  | frontend_logic/u1_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u1_coincidence_unit/g1[7].rpn/count[4]_i_1__6_n_0  | frontend_logic/u1_coincidence_unit/count                     |                2 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG | frontend_logic/u1_coincidence_unit/g1[6].rpn/count[4]_i_1__5_n_0  | frontend_logic/u1_coincidence_unit/count                     |                1 |              5 |
+|  S_AXI_ACLK_IBUF_BUFG |                                                                   | backend_logic/pulser_0p1_to_10Hz/reset_states                |                2 |              6 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg22[23]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                1 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg22[15]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                4 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg22[7]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                2 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg7[7]_i_1_n_0                                               | axi_awready_i_1_n_0                                          |                2 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg21[7]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                3 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg9[7]_i_1_n_0                                               | axi_awready_i_1_n_0                                          |                5 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg23[7]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                2 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg24[15]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                3 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg24[23]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                3 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg24[31]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                5 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg8[7]_i_1_n_0                                               | axi_awready_i_1_n_0                                          |                1 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg6[7]_i_1_n_0                                               | axi_awready_i_1_n_0                                          |                3 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg5[7]_i_1_n_0                                               | axi_awready_i_1_n_0                                          |                3 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg19[7]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                5 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg2[7]_i_1_n_0                                               | axi_awready_i_1_n_0                                          |                3 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg30[15]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                3 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg30[23]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                3 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg30[7]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                4 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg31[7]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                2 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg3[7]_i_1_n_0                                               | axi_awready_i_1_n_0                                          |                5 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg4[7]_i_1_n_0                                               | axi_awready_i_1_n_0                                          |                3 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg0[7]_i_1_n_0                                               | axi_awready_i_1_n_0                                          |                1 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg18[7]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                4 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg24[7]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                2 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG |                                                                   | axi_awready_i_1_n_0                                          |                6 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg1[7]_i_1_n_0                                               | axi_awready_i_1_n_0                                          |                7 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg20[7]_i_1_n_0                                              | axi_awready_i_1_n_0                                          |                4 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg21[15]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                3 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg21[23]_i_1_n_0                                             | axi_awready_i_1_n_0                                          |                2 |              8 |
+|  S_AXI_ACLK_IBUF_BUFG | backend_logic/per1/coincidence_edge                               | backend_logic/per1/SCLR                                      |                3 |             10 |
+|  S_AXI_ACLK_IBUF_BUFG | backend_logic/pulser_0p1_to_10Hz/triger_c_reg_0                   |                                                              |                7 |             11 |
+|  S_AXI_ACLK_IBUF_BUFG |                                                                   | frontend_logic/u2_coincidence_unit/count                     |               11 |             18 |
+|  S_AXI_ACLK_IBUF_BUFG |                                                                   | frontend_logic/u1_coincidence_unit/count                     |               10 |             20 |
+|  S_AXI_ACLK_IBUF_BUFG | slv_reg_rden                                                      | axi_awready_i_1_n_0                                          |               15 |             32 |
+|  S_AXI_ACLK_IBUF_BUFG |                                                                   | reset_counters                                               |               41 |             88 |
+|  S_AXI_ACLK_IBUF_BUFG |                                                                   |                                                              |              145 |            579 |
++-----------------------+-------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+
+

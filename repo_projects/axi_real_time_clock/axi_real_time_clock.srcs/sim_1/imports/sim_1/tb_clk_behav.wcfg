@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_clk_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_clk" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wave_markers>
+      <marker label="" time="999996423000" />
+   </wave_markers>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_clk/uut/clock">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_clk/uut/load">
+      <obj_property name="ElementShortName">load</obj_property>
+      <obj_property name="ObjectShortName">load</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_clk/uut/set_l32w">
+      <obj_property name="ElementShortName">set_l32w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">set_l32w[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_clk/uut/set_h32w">
+      <obj_property name="ElementShortName">set_h32w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">set_h32w[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_clk/uut/time_now_l32w">
+      <obj_property name="ElementShortName">time_now_l32w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">time_now_l32w[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_clk/uut/time_now_h32w">
+      <obj_property name="ElementShortName">time_now_h32w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">time_now_h32w[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_clk/uut/over_flow">
+      <obj_property name="ElementShortName">over_flow</obj_property>
+      <obj_property name="ObjectShortName">over_flow</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_clk/uut/one_ms_pulse">
+      <obj_property name="ElementShortName">one_ms_pulse</obj_property>
+      <obj_property name="ObjectShortName">one_ms_pulse</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_clk/uut/rtc1/CLK">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_clk/uut/rtc1/CE">
+      <obj_property name="ElementShortName">CE</obj_property>
+      <obj_property name="ObjectShortName">CE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_clk/uut/rtc1/LOAD">
+      <obj_property name="ElementShortName">LOAD</obj_property>
+      <obj_property name="ObjectShortName">LOAD</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_clk/uut/rtc1/L">
+      <obj_property name="ElementShortName">L[31:0]</obj_property>
+      <obj_property name="ObjectShortName">L[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_clk/uut/rtc1/THRESH0">
+      <obj_property name="ElementShortName">THRESH0</obj_property>
+      <obj_property name="ObjectShortName">THRESH0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_clk/uut/rtc1/Q">
+      <obj_property name="ElementShortName">Q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_clk/uut/msrtc/CLK">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_clk/uut/msrtc/THRESH0">
+      <obj_property name="ElementShortName">THRESH0</obj_property>
+      <obj_property name="ObjectShortName">THRESH0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_clk/uut/msrtc/Q">
+      <obj_property name="ElementShortName">Q[16:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
